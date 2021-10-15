@@ -1,0 +1,9 @@
+POST    /control - create new project and return it's id
+
+GET     /control/<id> - get project status {updating, ok, error}
+DELETE  /control/<id> - delete project
+POST  /control/<id> - POST project
+
+DELETE  /control/<id>/runtime - stop runtime
+POST  /control/<id>/runtime - (re)start runtime
+GET     /control/<id>/runtime - get runtime status (stopped, running, starting, stopping, error}

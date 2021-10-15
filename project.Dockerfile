@@ -1,0 +1,7 @@
+FROM ubuntu
+ARG COMMAND
+ENV COMMAND ${COMMAND}
+COPY . /repo
+
+WORKDIR /repo
+CMD eval "$COMMAND"
